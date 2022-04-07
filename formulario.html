@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="es">
+
+<head>
+
+<meta charset="utf-8"> 
+
+<title> Nuevas caracteristics de HTML5 en formularios </title>
+
+</head> 
+
+<body>
+
+<h1>  Nuevas caracteristics de HTML5 en formularios </h1>
+
+<p>Este es un ejemplo</P>
+
+<form> 
+<p>
+<label for="name"> *Nombre </label>
+<input type="text" name="name"id="name"
+placeholder="juan perez"
+autofocus
+autocomplete
+required>
+</p> 
+
+<p>
+<label for="passwd"> *contraseña </label>
+<input type="password" name="passwd" id="passwd" 
+placeholder="qwe1234"
+pattern="[a-z]{3}[0-9]{4}"
+required/> (debe tener 3 letras y 4 numeros en ese orden)</p> 
+
+<p>
+<label for="phone">Telefono</label>
+<input type="tel" name="phone" id="phone" placeholder="+541125263698">
+</p>
+
+<p>
+<label for="email">Email"</label>
+<input type="email" name="email" id="email" placeholder="ejemplo@email,com">
+</p>
+
+<p>
+<label for="página web">tu página</label>
+<input type="url" name="página web" id="página web" placeholder="http://www.tuweb.com">
+</p>
+
+<p>
+<label for="entrega">Fecha de envio</label>
+<input type="date" name="entrega" id="entrega" min="2020-06-16" max="2020-07-16" placeholder="2000-04-17">(minimo 2020-06-16, maximo 2020-07-16) 
+</p>
+
+<p>
+<label for="numero">Numero de temas</label>
+<input type="number" name="numero" id="numero" min="2" max="14" step="2" placeholder="2">  (solo numeros pares entre 2 y 14)</p>
+
+<p> 
+<label for="coloritem">Color del item</label>
+<input type="color" name="coloritem" id="coloritem" value="#1A33FF">
+</p>
+
+<p> 
+<label for="busqueda">Buscar</label>
+<input type="search" name="busqueda" id="busqueda">
+</p>
+
+<p> 
+<label for="points">Rango de valores</label>
+<input type="range" name="points" id="points" min="1" max="10">entre 1 y 10
+</p>
+
+
+<p>
+<fieldset>
+<legend>Selecciona una prioridad</legend>
+<p><label> <input type="radio" name="prioridad" value="baja" checked>Baja</label></p>
+<p><label> <input type="radio" name="prioridad" value="media">Media</label></p>
+<p><label> <input type="radio" name="prioridad" value="alta">Alta</label></p>
+</fieldset>
+
+<p>
+<fieldset>
+<legend>Selecciona un tipo de envio</legend>
+<p><label> <input type="checkbox" name="envio" value="urgente"checked>Entrega inmediata</label></p>
+<p><label> <input type="checkbox" name="envio" value="factura c"checked>Factura C</label></p>
+<p><label> <input type="checkbox" name="envio" value="urgente">Factura A</label></p>
+</fieldset>
+
+<input type="submit" value="Enviar"
+<form/>
+
+</body>
+</html>
